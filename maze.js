@@ -92,7 +92,7 @@ function Maze(options) {
   };
 }
 
-/** Creates a single block and sets it's position. */
+/** Creates a single block and sets its position. */
 Maze.prototype.createBlock = function(p) {
   var block = document.createElement('div');
   block.classList.add('block');
