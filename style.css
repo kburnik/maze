@@ -1,0 +1,72 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+}
+
+#grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 600px;
+}
+
+.block {
+  border: 1px solid black;
+  position: absolute;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+  font-size: 8px;
+  display: block;
+  background: #666;
+  color: white;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.block.generated {
+  background: #fff;
+}
+
+.block.generated.target {
+  background: #ffd27f;
+}
+
+.block.generated.visited {
+  background: #eef;
+}
+
+.block.generated.visited.path {
+  background: #aaf;
+}
+
+.block.current {
+  background: #0f0 !important;
+}
+
+.block.current.target {
+ background: #ffa500 !important;
+}
+
+.block.current.error {
+  background: #f00 !important;
+}
+
+.block.left {
+  border-left: 1px solid transparent;
+}
+
+.block.right {
+  border-right: 1px solid transparent;
+}
+
+.block.bottom {
+  border-bottom: 1px solid transparent;
+}
+
+.block.top {
+  border-top: 1px solid transparent;
+}
